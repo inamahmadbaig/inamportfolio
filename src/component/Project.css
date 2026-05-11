@@ -1,0 +1,60 @@
+.projects-section {
+    background: linear-gradient(-45deg, #0f172a, #1e3a8a, #3b82f6, #0ea5e9);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    padding: 60px 20px;
+}
+
+/* Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Cards */
+.project-card {
+    background: #111827;
+    color: white;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+/* Hover */
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #a855f7;
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.25);
+}
+
+/* ========================= */
+/* 📱 TABLET RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .projects-section {
+        padding: 40px 15px;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 480px) {
+
+    .projects-section {
+        padding: 30px 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+}
